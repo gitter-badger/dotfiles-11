@@ -2,7 +2,8 @@
 " internet. I have not bothered to source anything as the majority of those
 " authors' sources were similarly broad.
 
-" proptest
+"pathogen line
+execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
 
 "alwasy with the ruler
 set ruler
