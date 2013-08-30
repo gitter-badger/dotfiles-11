@@ -21,4 +21,5 @@ FUTURE
 - install and see the intention results of https://github.com/tpope/vim-sleuth
 - look into installing https://github.com/tpope/vim-fugitive
 	- same with https://github.com/vim-ruby/vim-ruby
+- this statusline plugin might be awesome https://github.com/Lokaltog/powerline
 

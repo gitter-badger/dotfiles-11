@@ -4,9 +4,59 @@
 
 " EUNUCH IS INSTALLED.. KEEP THIS IN MIND WHEN COMPILING AVAILABLE COMMANDS
 
+" autocmd line
+autocmd!
+
 "pathogen lines
 source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
+
+""""""""""""""
+"TODO's Here:
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"TODO: figure this out: Cool tab completion stuff
+set wildmenu
+set wildmode=list:longest,full
+
+" set winwidth.. not completely sure the full ramifications of this.. may need
+" to remove TODO
+set winwidth=79
+
+"timeout on inserts.. may cause issues TODO
+:set timeout timeoutlen=1000 ttimeoutlen=100
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CUSTOM AUTOCMDS TODO
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+augroup vimrcEx
+	" Clear all autocmds in the group
+	autocmd!
+	autocmd FileType text setlocal textwidth=78
+	" Jump to last cursor position unless it's invalid or in an event handler
+	autocmd BufReadPost *
+    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\   exe "normal g`\"" |
+	\ endif
+
+	"for ruby, autoindent with two spaces, always expand tabs
+	autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
+    autocmd FileType python set sw=4 sts=4 et
+
+    " Leave the return key alone when in command line windows, since it's used to run commands there.
+    autocmd! CmdwinEnter * :unmap <cr>
+    autocmd! CmdwinLeave * :call MapCR()
+
+augroup END
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+"leader setting
+let mapleader=","
+
+" allow unsaved background buffers
+set hidden
 
 "alwasy with the ruler
 set ruler
@@ -33,6 +83,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set smarttab
+set autoindent
+set si
 
 " show matching brackets
 set showmatch
@@ -41,24 +93,42 @@ set showmatch
 set number
 
 " set history length
-set history=1000
+set history=10000
 
 " set autoread when file is altered externally
 set autoread
 
 " hilight search results
-set hlsearch
+set hlsearch 
+
+" hilight current line
+set cursorline
+
+" if you try to open an already opened buffer.. move to instead of opening a
+" second
+set switchbuf=useopen
+
+"always show tabs at top
+set showtabline=2
+
+set shell=bash
+
+" Prevent Vim from clobbering the scrollback buffer. See
+" " http://www.shallowsky.com/linux/noaltscreen.html
+set t_ti= t_te=
+" " keep more context when scrolling off the end of a buffer
+set scrolloff=3
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
 
 " ignore case when searching
 set ignorecase
 set smartcase
+set ignorecase smartcase
 
 " off swapfile bullshit
 set noswapfile
-
-" be good about indention
-set ai
-set si
 
 " smart window moving
 map <C-j> <C-W>j
@@ -66,23 +136,15 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l 
 
-
-" Remap VIM 0 to first non-blank character 
-map 0 ^ 
-
 " show command 
 set showcmd
 	
-"TODO: figure this out: Cool tab completion stuff
-"set wildmenu
-"set wildmode=list:longest,full
-
 " This is totally awesome - remap jj to escape in insert mode.  You'll never
 " type jj anyway, so it's great!
 inoremap jj <Esc>
 inoremap kk <Esc>
 
-" Incremental searching is sexy
+" Incremental searching
 set incsearch
 
 " Next Tab
