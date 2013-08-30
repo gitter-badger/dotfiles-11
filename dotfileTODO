@@ -12,6 +12,9 @@
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?
 9. need to steal from das's and other's gitconfig. some useful shortcuts exist
+10. remap 1j and 1k to 10j adn 10k
+11. change searches to underline
+12. commentary plugin
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby.
