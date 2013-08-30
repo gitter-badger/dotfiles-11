@@ -2,8 +2,9 @@
 " internet. I have not bothered to source anything as the majority of those
 " authors' sources were similarly broad.
 
-"pathogen line
-execute pathogen#infect('bundle/{}', '~/.vim/bundle/{}')
+"pathogen lines
+source vim/bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 "alwasy with the ruler
 set ruler
