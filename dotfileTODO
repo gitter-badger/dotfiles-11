@@ -4,7 +4,7 @@
 	d. what are these? :: https://github.com/garybernhardt/dotfiles/blob/master/.gitmodules
 2. look into tmux terminal multiplexer.. also gnuscreen and if used gary bernhardts .screenrc
 3. nerd tree file explorer bar.
-7. change script instead of creating sourc top level files make symbolic links to the files.
+7. change script instead of creating sourc top level files make symbolic links to the files. also make it add links for bashrc and  any other unused defaults that redirect
 8. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?

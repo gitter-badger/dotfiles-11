@@ -24,3 +24,4 @@ alias sshafzelia="ssh andrewrussellhayes@afzelia.dreamhost.com"
 
 # command alias
 alias reload=". ~/.bash_profile"
+alias gitconf="cat ~/dotfiles/gitconfig"

@@ -20,3 +20,5 @@ if [ -d ~/.vim ]; then
 	mv ~/.vim ~/.old_vimDir
 fi	
 ln -s ~/dotfiles/vim ~/.vim
+
+# add creation of .gitconfig symlink
