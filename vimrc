@@ -2,6 +2,8 @@
 " internet. I have not bothered to source anything as the majority of those
 " authors' sources were similarly broad.
 
+" EUNUCH IS INSTALLED.. KEEP THIS IN MIND WHEN COMPILING AVAILABLE COMMANDS
+
 "pathogen lines
 source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()

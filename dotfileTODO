@@ -4,8 +4,6 @@
 	d. what are these? :: https://github.com/garybernhardt/dotfiles/blob/master/.gitmodules
 2. look into tmux terminal multiplexer.. also gnuscreen and if used gary bernhardts .screenrc
 3. nerd tree file explorer bar.
-4. check out and install fugitive.vim
-5. check out and install eunuch.vim
 7. change script instead of creating sourc top level files make symbolic links to the files.
 8. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
@@ -15,10 +13,12 @@
 11. change searches to underline
 
 FUTURE
-- slim template engine. allows simple html tags.. use when developing own site in ruby.
+- slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
 - pull some of the best mappings from https://github.com/tpope/vim-unimpaired
 - add https://github.com/tpope/vim-endwise ?
 - go through https://github.com/tpope/vim-sensible and pull any desired
 	- same with https://github.com/tpope/vim-scriptease
 - install and see the intention results of https://github.com/tpope/vim-sleuth
+- look into installing https://github.com/tpope/vim-fugitive
+	- same with https://github.com/vim-ruby/vim-ruby
 
