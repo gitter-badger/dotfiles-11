@@ -6,7 +6,6 @@
 3. nerd tree file explorer bar.
 4. check out and install fugitive.vim
 5. check out and install eunuch.vim
-6. check out and install fugitive.vim
 7. change script instead of creating sourc top level files make symbolic links to the files.
 8. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
@@ -14,7 +13,12 @@
 9. need to steal from das's and other's gitconfig. some useful shortcuts exist
 10. remap 1j and 1k to 10j adn 10k
 11. change searches to underline
-12. commentary plugin
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby.
+- pull some of the best mappings from https://github.com/tpope/vim-unimpaired
+- add https://github.com/tpope/vim-endwise ?
+- go through https://github.com/tpope/vim-sensible and pull any desired
+	- same with https://github.com/tpope/vim-scriptease
+- install and see the intention results of https://github.com/tpope/vim-sleuth
+
