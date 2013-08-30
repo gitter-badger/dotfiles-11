@@ -1,23 +1,17 @@
-1. find out how to source .vim folder and move it to dotfiles so the solarized plugin is shared 
-2. alter bashrc
-	a. add home alias. home = cd ~/
-3. add things from destroy all software's vimrc :: https://github.com/garybernhardt/dotfiles/blob/master/.vimrc
-	a. pathogen? what is it? i probably should have it?
+1. add things from destroy all software's vimrc :: https://github.com/garybernhardt/dotfiles/blob/master/.vimrc
 	b. bashrc :: https://github.com/garybernhardt/dotfiles/blob/master/.bashrc
 	c. gitconfig :: https://github.com/garybernhardt/dotfiles/blob/master/.gitconfig
 	d. what are these? :: https://github.com/garybernhardt/dotfiles/blob/master/.gitmodules
-4. look into tmux terminal multiplexer.. also gnuscreen and if used gary bernhardts .screenrc
-5. nerd tree file explorer bar.
+2. look into tmux terminal multiplexer.. also gnuscreen and if used gary bernhardts .screenrc
+3. nerd tree file explorer bar.
+4. check out and install fugitive.vim
+5. check out and install eunuch.vim
 6. check out and install fugitive.vim
-7. check out and install eunuch.vim
-8. check out and install altercation/vim-colors-solarized
-9. check out and install wincent/Command-t
-10. check out and install fugitive.vim
-11. change script instead of creating sourc top level files make symbolic links to the files.
-
+7. change script instead of creating sourc top level files make symbolic links to the files.
+8. go through and clean up settings.sh
+	- do i need to make a parent process that runs both settings.sh and config?
+	- can i map a quick double caps to be escape and still leave single caps as ctrl?
+9. need to steal from das's and other's gitconfig. some useful shortcuts exist
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby.
-- go through and clean up settings.sh
-	- do i need to make a parent process that runs both settings.sh and config?
-	- can i map a quick double caps to be escape and still leave single caps as ctrl?
