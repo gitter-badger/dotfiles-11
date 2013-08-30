@@ -3,7 +3,7 @@
 " authors' sources were similarly broad.
 
 "pathogen lines
-source vim/bundle/vim-pathogen/autoload/pathogen.vim
+source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
 "alwasy with the ruler
