@@ -1,0 +1,7 @@
+[user]
+	name = Andrew Hayes
+	email = mail@AndrewHay.es
+[credential]
+	helper = osxkeychain
+[merge]
+	tool = vimdiff
