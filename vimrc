@@ -34,23 +34,28 @@ augroup vimrcEx
 	autocmd FileType text setlocal textwidth=78
 	" Jump to last cursor position unless it's invalid or in an event handler
 	autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+	\ if line("'\"") > 0 && line("'\"") <= line("$") |
 	\   exe "normal g`\"" |
 	\ endif
 
 	"for ruby, autoindent with two spaces, always expand tabs
 	autocmd FileType ruby,haml,eruby,yaml,html,javascript,sass,cucumber set ai sw=2 sts=2 et
-    autocmd FileType python set sw=4 sts=4 et
+	autocmd FileType python set sw=4 sts=4 et
 
-    " Leave the return key alone when in command line windows, since it's used to run commands there.
-    autocmd! CmdwinEnter * :unmap <cr>
-    autocmd! CmdwinLeave * :call MapCR()
+	" Leave the return key alone when in command line windows, since it's used to run commands there.
+	autocmd! CmdwinEnter * :unmap <cr>
+	autocmd! CmdwinLeave * :call MapCR()
 
 augroup END
 
+" Insert a hash rocket with <c-l>
+imap <c-l> <space>=><space>
+" Can't be bothered to understand ESC vs <c-c> in insert mode
+imap <c-c> <esc>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-
+let g:airline_powerline_fonts = 1
 
 "leader setting
 let mapleader=","
@@ -86,6 +91,13 @@ set smarttab
 set autoindent
 set si
 
+" Clear the search buffer when hitting return
+function! MapCR()
+	nnoremap <cr> :nohlsearch<cr>
+endfunction
+call MapCR()
+"TODO what is this supposed to do?nnoremap <leader><leader> <c-^>
+
 " show matching brackets
 set showmatch
 
@@ -100,6 +112,7 @@ set autoread
 
 " hilight search results
 set hlsearch 
+highlight Search cterm=underline
 
 " hilight current line
 set cursorline
@@ -123,8 +136,8 @@ set scrolloff=3
 set backspace=indent,eol,start
 
 " ignore case when searching
-set ignorecase
-set smartcase
+"set ignorecase
+"set smartcase
 set ignorecase smartcase
 
 " off swapfile bullshit
@@ -134,11 +147,11 @@ set noswapfile
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
-map <C-l> <C-W>l 
+map <C-l> <C-W>l
 
-" show command 
+" show command
 set showcmd
-	
+
 " This is totally awesome - remap jj to escape in insert mode.  You'll never
 " type jj anyway, so it's great!
 inoremap jj <Esc>
@@ -170,4 +183,40 @@ nmap L :vertical resize +1<CR>
 
 " cntrl+C joins lines now
 map <C-c> :join<Cr>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MULTIPURPOSE TAB KEY
+" Indent if we're at the beginning of a line. Else, do completion.
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! InsertTabWrapper()
+	let col = col('.') - 1
+	if !col || getline('.')[col - 1] !~ '\k'
+		return "\<tab>"
+	else
+		return "\<c-p>"
+	endif
+endfunction
+inoremap <tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <s-tab> <c-n>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" OPEN FILES IN DIRECTORY OF CURRENT FILE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" RENAME CURRENT FILE
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! RenameFile()
+	let old_name = expand('%')
+	let new_name = input('New file name: ', expand('%'), 'file')
+	if new_name != '' && new_name != old_name
+		exec ':saveas ' . new_name
+		exec ':silent !rm ' . old_name
+		redraw!
+	endif
+endfunction
+map <leader>n :call RenameFile()<cr>
 
