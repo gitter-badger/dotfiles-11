@@ -15,7 +15,7 @@
 	- pathogen
 	- repeat
 7. Figure out how to make custom help page to list all my mappings.
-	- put vimrc info
+	- put vimrc info -- before this, pull from or install vim-unimpared
 	- key usage and shortcuts for plugins
 8. readme
 9. metaprogram a custom dotfiles builder -- in ruby if possible
