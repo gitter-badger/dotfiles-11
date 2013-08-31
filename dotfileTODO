@@ -1,16 +1,10 @@
-1. add things from destroy all software's vimrc :: https://github.com/garybernhardt/dotfiles/blob/master/.vimrc
-	b. bashrc :: https://github.com/garybernhardt/dotfiles/blob/master/.bashrc
-	c. gitconfig :: https://github.com/garybernhardt/dotfiles/blob/master/.gitconfig
-	d. what are these? :: https://github.com/garybernhardt/dotfiles/blob/master/.gitmodules
 2. look into tmux terminal multiplexer.. also gnuscreen and if used gary bernhardts .screenrc
 3. nerd tree file explorer bar.
 7. change script instead of creating sourc top level files make symbolic links to the files. also make it add links for bashrc and  any other unused defaults that redirect
 8. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?
-9. need to steal from das's and other's gitconfig. some useful shortcuts exist
 10. remap 1j and 1k to 10j adn 10k
-11. change searches to underline
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
