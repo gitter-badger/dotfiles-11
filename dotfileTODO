@@ -17,6 +17,9 @@
 7. Figure out how to make custom help page to list all my mappings.
 	- put vimrc info
 	- key usage and shortcuts for plugins
+8. readme
+9. metaprogram a custom dotfiles builder -- in ruby if possible
+	- include package installer
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
