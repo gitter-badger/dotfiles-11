@@ -128,7 +128,9 @@ set shell=bash
 
 " Prevent Vim from clobbering the scrollback buffer. See
 " " http://www.shallowsky.com/linux/noaltscreen.html
-set t_ti= t_te=
+" turning off for now.. i can see how this might be useful so i am leaving it
+"set t_ti= t_te=
+
 " " keep more context when scrolling off the end of a buffer
 set scrolloff=3
 
