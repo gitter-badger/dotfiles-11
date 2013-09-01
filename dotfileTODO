@@ -1,11 +1,9 @@
-1. look into tmux terminal multiplexer.. also gnuscreen and if used gary bernhardts .screenrc
-2. nerd tree file explorer bar.
-3. change script instead of creating sourc top level files make symbolic links to the files. also make it add links for bashrc and  any other unused defaults that redirect
-4. go through and clean up settings.sh
+1. figure out where/how gary bernhardt did his whole window config thing where windows resize automatically. 
+2. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?
-5. remap 1j and 1k to 10j adn 10k
-6. configure plugins:
+3. remap 1j and 1k to 10j adn 10k
+4. configure plugins:
 	- Command-T
 	- nerdtree
 	- airline
@@ -14,11 +12,11 @@
 	- eunuch
 	- pathogen
 	- repeat
-7. Figure out how to make custom help page to list all my mappings.
+5. Figure out how to make custom help page to list all my mappings.
 	- put vimrc info -- before this, pull from or install vim-unimpared
 	- key usage and shortcuts for plugins
-8. readme
-9. metaprogram a custom dotfiles builder -- in ruby if possible
+6. readme
+7. metaprogram a custom dotfiles builder -- in ruby if possible
 	- include package installer
 
 FUTURE
