@@ -7,20 +7,41 @@
 " autocmd line
 autocmd!
 
+" Damned filetype plugin making my tw=78.. override that shit once and for all.
+set tw=1000000
+
 "pathogen lines
 source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
-""""""""""""""
-"TODO's Here:
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"TODO: figure this out: Cool tab completion stuff
 set wildmenu
 set wildmode=list:longest,full
 
+""""""""""""""
+"Trying out new things here:
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+vmap 1j 10j 
+vmap 1k 10k
+vmap 1h 10h
+vmap 1l 10l
+
+nmap 1j 10j 
+nmap 1k 10k
+nmap 1h 10h
+nmap 1l 10l
+
 " set winwidth.. not completely sure the full ramifications of this.. may need
 " to remove TODO
-set winwidth=79
+"set winwidth=79
+
+augroup vimrc_autocmds
+	autocmd BufEnter * highlight OverLength cterm=underline 
+    autocmd BufEnter * match OverLength /\%100v.*/
+augroup END
+
 
 "timeout on inserts.. may cause issues TODO
 :set timeout timeoutlen=1000 ttimeoutlen=100
@@ -31,7 +52,6 @@ set winwidth=79
 augroup vimrcEx
 	" Clear all autocmds in the group
 	autocmd!
-	autocmd FileType text setlocal textwidth=78
 	" Jump to last cursor position unless it's invalid or in an event handler
 	autocmd BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |

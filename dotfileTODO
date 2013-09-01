@@ -1,8 +1,40 @@
+1. add irb config set irb to default to simple.. or maybe just make an alias in bash like irbs = irb --simpleprompt
 1. figure out where/how gary bernhardt did his whole window config thing where windows resize automatically. 
+	- can this be switched on and off with a vim command? http://vim.1045645.n5.nabble.com/winwidth-amp-winheight-doesn-t-work-here-td4884704.html
+
+		=============================================================================
+		With me it does, but remember that these options are "desired minimums 
+		for the current window" and that the "absolute minimums for any window" 
+		are set by 'winminwidth' and 'winminheight'. When switching windows, the 
+		new window will not be resized if it already exceeds the desired 
+		minimum, nor will it be made bigger than would allow all other windows 
+		to remain at or above the absolute minimum. 
+		
+		Also, some special window types have their own desired minimums: see 
+		:help 'helpheight' 
+		:help 'cmdwinheight' 
+		:help 'previewheight' 
+		
+		The absolute minimums may be set to zero, the desired minimum for the 
+		current window must be at least 1 since the currentcursor location must 
+		always be visible. 
+		
+		The following should swell the current window to maximum size, squashing 
+		other windows to only a vertical divider on left and right or a status 
+		line above and below: 
+		
+		:set nowfh                                  " no fixed size 
+		:set noea eadirection=both                  " no equal size 
+		:set wmw=0 wmh=0                            " squash other windows 
+		:set wiw=9999 wh=999 hh=999 cwh=999 pvh=999 " enlarge current window 
+		:let netrw_winsize = 100                    " netrw split to 100% size 
+		=============================================================================
+
 2. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?
-3. remap 1j and 1k to 10j adn 10k
+3. remap: 
+	- uu should undo
 4. configure plugins:
 	- Command-T
 	- nerdtree
@@ -13,11 +45,15 @@
 	- pathogen
 	- repeat
 5. Figure out how to make custom help page to list all my mappings.
+	- The command to access this information should be ':help me'
 	- put vimrc info -- before this, pull from or install vim-unimpared
 	- key usage and shortcuts for plugins
 6. readme
 7. metaprogram a custom dotfiles builder -- in ruby if possible
 	- include package installer
+8. update configuration script:
+	- script should ask if user wants to do all and also give a list of what "all" means
+	- if user selects no then the program should walk through each setup task and ask for a y/n
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
@@ -30,3 +66,6 @@ FUTURE
 	- same with https://github.com/vim-ruby/vim-ruby
 - this statusline plugin might be awesome https://github.com/Lokaltog/powerline
 
+PRERELEASE
+- Clean up vimrc and sort and organize appropriately
+- remove any unused code
