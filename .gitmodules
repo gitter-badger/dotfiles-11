@@ -22,3 +22,6 @@
 [submodule "vim/bundle/nerdtree"]
 	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/fonts/powerline-fonts"]
+	path = vim/fonts/powerline-fonts
+	url = https://github.com/Lokaltog/powerline-fonts
