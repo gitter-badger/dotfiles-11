@@ -39,7 +39,7 @@ nmap 1l 10l
 
 augroup vimrc_autocmds
 	autocmd BufEnter * highlight OverLength cterm=underline 
-    autocmd BufEnter * match OverLength /\%100v.*/
+    autocmd BufEnter * match OverLength /\%80v.*/
 augroup END
 
 
