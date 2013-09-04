@@ -70,6 +70,8 @@ augroup END
 
 " Insert a hash rocket with <c-l>
 imap <c-l> <space>=><space>
+
+" WHAT DOES THIS DO??
 " Can't be bothered to understand ESC vs <c-c> in insert mode
 imap <c-c> <esc>
 
