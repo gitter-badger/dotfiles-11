@@ -55,7 +55,8 @@
 8. update configuration script:
 	- script should ask if user wants to do all and also give a list of what "all" means
 	- if user selects no then the program should walk through each setup task and ask for a y/n
-9. Go back through vimrc and make all breaks at 80 instead of 100. PERHAPS undo that line length hack?
+9. Go back through vimrc and make all breaks at 80 instead of 100. PERHAPS undo that line length hack? 
+10. go through thoughtbot additions.
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
