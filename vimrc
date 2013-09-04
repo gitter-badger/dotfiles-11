@@ -242,3 +242,33 @@ function! RenameFile()
 endfunction
 map <leader>n :call RenameFile()<cr>
 
+
+
+
+""""""""""""""""""""""""""""""""""""
+" from thoughtbot
+""""""""""""""""""""""""""""""""""""
+set nocompatible " Use Vim settings, rather then Vi settings
+set nobackup
+set nowritebackup
+set noswapfile " http://robots.thoughtbot.com/post/18739402579/global-gitignore#comment-458413287
+
+ " For all text files set 'textwidth' to 78 characters.
+  autocmd FileType text setlocal textwidth=78
+
+" When editing a file, always jump to the last known cursor position.
+" Don't do it for commit messages, when the position is invalid, or when
+" inside an event handler (happens when dropping a file on gvim).
+  autocmd BufReadPost *
+    \ if &ft != 'gitcommit' && line("'\"") > 0 && line("'\"") <= line("$") |
+    \ exe "normal g`\"" |
+    \ endif
+    
+    
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
+
+
+" Open new split panes to right and bottom, which feels more natural
+set splitbelow
+set splitright
