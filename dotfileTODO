@@ -3,7 +3,6 @@
 	- can this be switched on and off with a vim command? http://vim.1045645.n5.nabble.com/winwidth-amp-winheight-doesn-t-work-here-td4884704.html
 http://flaviusim.com/blog/resizing-vim-window-splits-like-a-boss/
 
-:nnoremap Q <Nop>
 
 2. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
