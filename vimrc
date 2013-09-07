@@ -72,8 +72,8 @@ nmap H :vertical resize -1<CR>
 nmap L :vertical resize +1<CR>
 
 " when i press 1 and a direction make it 10
-vmap 1j 10j | vmap 1k 10k | vmap 1h 10h | vmap 1l 10l
-nmap 1j 10j | nmap 1k 10k | nmap 1h 10h | nmap 1l 10l
+vmap 1j <C-\><C-n>gv10j | vmap 1k <C-\><C-n>gv10k | vmap 1h <C-\><C-n>gv10h | vmap 1l <C-\><C-n>gv10l
+nmap 1j <C-\><C-n>10j | nmap 1k <C-\><C-n>10k | nmap 1h <C-\><C-n>10h | nmap 1l <C-\><C-n>10l
 
 map <C-j> <C-W>j | map <C-k> <C-W>k | map <C-h> <C-W>h | map <C-l> <C-W>l " smart window moving
 imap <c-l> <space>=><space> " Insert a hash rocket with <c-l>
