@@ -19,8 +19,10 @@ alias cd.....="cd ../../../../.."
 alias cd......="cd ../../../../../.."
 
 # ssh alias's
-alias sshimac="ssh iMac@iMac.local"
-alias sshafzelia="ssh andrewrussellhayes@afzelia.dreamhost.com"
+alias sshair="ssh andrew@10.0.1.2"
+alias sshimac="ssh iMac@10.0.1.3"
+alias sshpi="ssh pi@10.0.1.4"
+alias sshdh="ssh andrewrussellhayes@andrewrussellhayes.com"
 
 # command alias
 alias reload=". ~/.bash_profile"

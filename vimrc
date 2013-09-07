@@ -39,7 +39,7 @@ set smarttab | set autoindent | set si
 " underline any text beyond 80 characters
 augroup vimrc_autocmds
 	autocmd BufEnter * highlight OverLength cterm=underline 
-    autocmd BufEnter * match OverLength /\%80v.*/
+    autocmd BufEnter * match OverLength /\%81v.*/
 augroup END
 
 """""""""""""""""""""""""""""""
@@ -71,9 +71,23 @@ nmap J :resize -1<CR>
 nmap H :vertical resize -1<CR>
 nmap L :vertical resize +1<CR>
 
-" when i press 1 and a direction make it 10
-vmap 1j 10j | vmap 1k 10k | vmap 1h 10h | vmap 1l 10l
-nmap 1j 10j | nmap 1k 10k | nmap 1h 10h | nmap 1l 10l
+" This function turns 1h,j,k&l into 10h,j,k&l in both normal and visual mode.
+"	It is not totally clear why this works the way that it does. It appears that
+"	the 0 in the mapping is appended to the 1 as it certainly still works as
+"	expected. This function is necessary because the simple 1-10 mapping yeilds
+"	some undesirable side effects.
+
+function TenMovement(type)
+    if v:count == 1
+        return '0'.a:type
+    else
+        return a:type
+    endif
+endfunction
+nnoremap <expr> j TenMovement('j') | nnoremap <expr> k TenMovement('k')
+nnoremap <expr> l TenMovement('l') | nnoremap <expr> h TenMovement('h')
+vnoremap <expr> j TenMovement('j') | vnoremap <expr> k TenMovement('k')
+vnoremap <expr> l TenMovement('l') | vnoremap <expr> h TenMovement('h')
 
 map <C-j> <C-W>j | map <C-k> <C-W>k | map <C-h> <C-W>h | map <C-l> <C-W>l " smart window moving
 imap <c-l> <space>=><space> " Insert a hash rocket with <c-l>
