@@ -1,9 +1,4 @@
 1. add irb config set irb to default to simple.. or maybe just make an alias in bash like irbs = irb --simpleprompt
-1. figure out where/how gary bernhardt did his whole window config thing where windows resize automatically.
-	- can this be switched on and off with a vim command? http://vim.1045645.n5.nabble.com/winwidth-amp-winheight-doesn-t-work-here-td4884704.html
-http://flaviusim.com/blog/resizing-vim-window-splits-like-a-boss/
-
-
 2. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?
@@ -31,6 +26,12 @@ http://flaviusim.com/blog/resizing-vim-window-splits-like-a-boss/
 	- if user selects no then the program should walk through each setup task and ask for a y/n
 9. Go back through vimrc and make all breaks at 80 instead of 100. PERHAPS undo that line length hack? 
 10. go through thoughtbot additions.
+11. check stuff in old directory for any additions
+12. check profile add to script etc if necessary.
+13. find out if there is a way to include files based on system. so debian and
+osx etc would have separate files?
+14. document the submodule addtition and update and int process on other
+machines
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
