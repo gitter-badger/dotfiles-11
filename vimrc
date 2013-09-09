@@ -46,6 +46,9 @@ augroup END
 " Editing Commands
 """""""""""""""""""""""""""""""
 
+" When running a program, automatically save it
+set autowrite
+
 " Display extra whitespace, uncomment when doing heavy cleanup
 " set list listchars=tab:»·,trail:·
 
