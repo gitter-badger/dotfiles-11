@@ -1,3 +1,7 @@
+0. can the vimrc just pull in the important plugins and then call the .vim
+folder? if that the case, can I then just break up the vimrc into individual
+files? in other words can i have a mappings file and a view file and a commands
+file.. things like that
 1. add irb config set irb to default to simple.. or maybe just make an alias in bash like irbs = irb --simpleprompt
 2. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
@@ -26,12 +30,15 @@
 	- if user selects no then the program should walk through each setup task and ask for a y/n
 9. Go back through vimrc and make all breaks at 80 instead of 100. PERHAPS undo that line length hack? 
 10. go through thoughtbot additions.
-11. check stuff in old directory for any additions
+11. check stuff in old directory for any additions browse the net for common or
+smart bash shortcuts. organize the bash like vim
 12. check profile add to script etc if necessary.
 13. find out if there is a way to include files based on system. so debian and
 osx etc would have separate files?
 14. document the submodule addtition and update and int process on other
 machines
+15. add shortcut for pi to start and stop vnc sudo /etc/init.d/tightvncserver
+start 
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
