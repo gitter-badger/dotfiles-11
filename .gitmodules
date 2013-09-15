@@ -25,3 +25,6 @@
 [submodule "vim/fonts/powerline-fonts"]
 	path = vim/fonts/powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts
+[submodule "vim/bundle/vim-instant-markdown"]
+	path = vim/bundle/vim-instant-markdown
+	url = https://github.com/suan/vim-instant-markdown

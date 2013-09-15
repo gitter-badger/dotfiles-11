@@ -39,6 +39,11 @@ osx etc would have separate files?
 machines
 15. add shortcut for pi to start and stop vnc sudo /etc/init.d/tightvncserver
 start 
+16. should i use zsh? http://fendrich.se/blog/2012/09/28/no/
+17. markdown plugin?
+18. add to config script.. if dotfiles is not located in the ~/ directory then
+make a simlink to its actual location from the ~/ directory
+19. add 1w mapping to 10w like i did for j k l and h
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
