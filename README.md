@@ -7,6 +7,8 @@ The script configureDotFiles.sh performs the necessary configuration for these
 configuration files to take effect on a new system or an old one whose
 configuration scheme has become somehow corrupted.
 
+settings.sh (liberated from various other users) is used to setup sensible defaults and has not yet been tested on the latest OSX release.
+
 ##### The following plugines are included as submodules using pathogen:
 - [Command-T](https://github.com/wincent/Command-T)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
