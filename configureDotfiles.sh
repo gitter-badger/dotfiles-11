@@ -10,6 +10,7 @@
 	#	else (exists but is not a symlink)
 	#		rename with old in front of name
 	# make link
+# TODO: Incorporate file list or file array and loop to to keep DRY
 
 # Take care of .bash_profile
 if [ -e ~/.bash_profile ]; then

@@ -43,11 +43,16 @@ start
 18. markdown plugin?
 19. add to config script.. if dotfiles is not located in the ~/ directory then
 make a simlink to its actual location from the ~/ directory
+<<<<<<< HEAD:dotfileTODO.markdown
 20. add 1w mapping to 10w like i did for j k l and h
 21. are there ruby things i need to add?
 22. hashrocket shortcut not working
 23. change granularity of undo
 24. add a past shortcut. :set paste and :set nopaste
+=======
+25. go through old
+
+>>>>>>> dbc7693dd4e5b8ef5418d60b031ab8c3eccbb866:dotfileTODO
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
 - pull some of the best mappings from https://github.com/tpope/vim-unimpaired
