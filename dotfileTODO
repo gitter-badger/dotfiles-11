@@ -44,6 +44,7 @@ start
 18. add to config script.. if dotfiles is not located in the ~/ directory then
 make a simlink to its actual location from the ~/ directory
 19. add 1w mapping to 10w like i did for j k l and h
+20. go through old
 
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
