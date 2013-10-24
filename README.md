@@ -7,8 +7,6 @@ The script configureDotFiles.sh performs the necessary configuration for these
 configuration files to take effect on a new system or an old one whose
 configuration scheme has become somehow corrupted.
 
-### vim
-
 ##### The following plugines are included as submodules using pathogen:
 - [Command-T](https://github.com/wincent/Command-T)
 - [nerdtree](https://github.com/scrooloose/nerdtree)
@@ -19,13 +17,4 @@ configuration scheme has become somehow corrupted.
 - [vim-instant-markdown](https://github.com/suan/vim-instant-markdown)
 - [vim-pathogen](https://github.com/tpope/vim-pathogen)
 - [vim-repeat](https://github.com/tpope/vim-repeat)
-
-### git
-
-### bash
-
-### ruby
-
-## Installation
-
-To install this on your computer...
+- (a few more have been added)
