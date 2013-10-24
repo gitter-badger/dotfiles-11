@@ -22,6 +22,7 @@ alias cd......="cd ../../../../../.."
 alias sshair="ssh andrew@10.0.1.2"
 alias sshimac="ssh iMac@10.0.1.3"
 alias sshpi="ssh pi@10.0.1.4"
+alias sshbbb="ssh root@10.0.1.5"
 alias sshdh="ssh andrewrussellhayes@andrewrussellhayes.com"
 
 # command alias

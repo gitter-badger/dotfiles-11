@@ -1,15 +1,15 @@
-0. can the vimrc just pull in the important plugins and then call the .vim
+1. can the vimrc just pull in the important plugins and then call the .vim
 folder? if that the case, can I then just break up the vimrc into individual
 files? in other words can i have a mappings file and a view file and a commands
 file.. things like that
-1. add irb config set irb to default to simple.. or maybe just make an alias in bash like irbs = irb --simpleprompt
-2. go through and clean up settings.sh
+2. add irb config set irb to default to simple.. or maybe just make an alias in bash like irbs = irb --simpleprompt
+3. go through and clean up settings.sh
 	- do i need to make a parent process that runs both settings.sh and config?
 	- can i map a quick double caps to be escape and still leave single caps as ctrl?
-3. remap:
+4. remap:
 	- uu should undo
 	- use smart tabs http://vim.wikia.com/wiki/Indent_with_tabs,_align_with_spaces
-4. configure plugins:
+5. configure plugins:
 	- Command-T
 	- nerdtree
 	- airline
@@ -18,33 +18,36 @@ file.. things like that
 	- eunuch
 	- pathogen
 	- repeat
-5. Figure out how to make custom help page to list all my mappings.
+6. Figure out how to make custom help page to list all my mappings.
 	- The command to access this information should be ':help me'
 	- put vimrc info -- before this, pull from or install vim-unimpared
 	- key usage and shortcuts for plugins
-6. readme
-7. metaprogram a custom dotfiles builder -- in ruby if possible
+7. readme
+8. metaprogram a custom dotfiles builder -- in ruby if possible
 	- include package installer
-8. update configuration script:
+9. update configuration script:
 	- script should ask if user wants to do all and also give a list of what "all" means
 	- if user selects no then the program should walk through each setup task and ask for a y/n
-9. Go back through vimrc and make all breaks at 80 instead of 100. PERHAPS undo that line length hack? 
-10. go through thoughtbot additions.
-11. check stuff in old directory for any additions browse the net for common or
+10. Go back through vimrc and make all breaks at 80 instead of 100. PERHAPS undo that line length hack? 
+11. go through thoughtbot additions.
+12. check stuff in old directory for any additions browse the net for common or
 smart bash shortcuts. organize the bash like vim
-12. check profile add to script etc if necessary.
-13. find out if there is a way to include files based on system. so debian and
+13. check profile add to script etc if necessary.
+14. find out if there is a way to include files based on system. so debian and
 osx etc would have separate files?
-14. document the submodule addtition and update and int process on other
+15. document the submodule addtition and update and int process on other
 machines
-15. add shortcut for pi to start and stop vnc sudo /etc/init.d/tightvncserver
+16. add shortcut for pi to start and stop vnc sudo /etc/init.d/tightvncserver
 start 
-16. should i use zsh? http://fendrich.se/blog/2012/09/28/no/
-17. markdown plugin?
-18. add to config script.. if dotfiles is not located in the ~/ directory then
+17. should i use zsh? http://fendrich.se/blog/2012/09/28/no/
+18. markdown plugin?
+19. add to config script.. if dotfiles is not located in the ~/ directory then
 make a simlink to its actual location from the ~/ directory
-19. add 1w mapping to 10w like i did for j k l and h
-
+20. add 1w mapping to 10w like i did for j k l and h
+21. are there ruby things i need to add?
+22. hashrocket shortcut not working
+23. change granularity of undo
+24. add a past shortcut. :set paste and :set nopaste
 FUTURE
 - slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
 - pull some of the best mappings from https://github.com/tpope/vim-unimpaired
