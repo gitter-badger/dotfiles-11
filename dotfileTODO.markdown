@@ -10,6 +10,7 @@
 6. Add shortcut for pi to start and stop vnc sudo /etc/init.d/tightvncserver start 
 7. Switch to zsh.
 8. Add to config script.. if dotfiles is not located in the ~/ directory then make a simlink to its actual location from the ~/ directory
+9. add .shrc config and to script
 
 ###vimrc ToDo:
 
