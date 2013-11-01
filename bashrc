@@ -26,5 +26,6 @@ alias sshbbb="ssh root@10.0.1.5"
 alias sshdh="ssh andrewrussellhayes@andrewrussellhayes.com"
 
 # command alias
+alias reboot="shutdown -r now"
 alias reload=". ~/.bash_profile"
 alias gitconf="cat ~/dotfiles/gitconfig"
