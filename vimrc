@@ -100,8 +100,7 @@ nnoremap <silent> <C-p> :tabprevious<CR> " Previous Tab
 nnoremap <silent> <C-t> :tabnew<CR> " New Tab
 map <Esc><Esc> :w<CR> " save on 2 esc's
 "Auto-commit on save if in git directory
-"autocmd BufWritePost * execute ':silent ! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m "Auto-commit: saved %"; fi > /dev/null 2>&1'
-autocmd BufWritePost * execute '! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m "Auto-commit: saved %"; fi > /dev/null 2>&1'
+autocmd BufWritePost * execute ':silent ! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m "Auto-commit: saved %"; fi > /dev/null 2>&1'
 map <C-z> u " make ctrl z not send the kill command
 map <C-c> :join<Cr> " cntrl+C joins lines now
 :nnoremap Q <Nop> " not go into ex mode when i press q
@@ -109,12 +108,12 @@ map <C-c> :join<Cr> " cntrl+C joins lines now
 
 
 "user input example for later
-nmap ff :call GetFoo() <CR> :exe "! echo ".Foo<CR>
-function GetFoo()
-	call inputsave()
-	let g:Foo=input("enter text")
-	call inputrestore()
-endfunction
+"nmap ff :call GetFoo() <CR> :exe "! echo ".Foo<CR>
+"function GetFoo()
+"	call inputsave()
+"	let g:Foo=input("enter text")
+"	call inputrestore()
+"endfunction
 
 """""""""""""""""""""""""""""""
 " Other Settings
