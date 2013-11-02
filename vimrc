@@ -107,7 +107,7 @@ map <C-c> :join<Cr> " cntrl+C joins lines now
 
 nnoremap eee  execute '! echo "test"<CR>'
 
-""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""
 " Other Settings
 """""""""""""""""""""""""""""""
 
