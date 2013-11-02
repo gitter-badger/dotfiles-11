@@ -105,7 +105,8 @@ map <C-z> u " make ctrl z not send the kill command
 map <C-c> :join<Cr> " cntrl+C joins lines now
 :nnoremap Q <Nop> " not go into ex mode when i press q
 
-nnoremap ff :! echo :call GetFoo() <cr>
+"#nnoremap ff :! echo :call GetFoo() <cr>
+nmap \x :call GetFoo() <CR> :exe ":! ".Foo<CR>
 
 function GetFoo()
 	call inputsave()
