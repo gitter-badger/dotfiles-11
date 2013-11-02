@@ -107,6 +107,7 @@ map <C-c> :join<Cr> " cntrl+C joins lines now
 :nnoremap Q <Nop> " not go into ex mode when i press q
 
 
+
 "user input example for later
 nmap ff :call GetFoo() <CR> :exe "! echo ".Foo<CR>
 function GetFoo()
