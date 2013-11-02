@@ -105,7 +105,13 @@ map <C-z> u " make ctrl z not send the kill command
 map <C-c> :join<Cr> " cntrl+C joins lines now
 :nnoremap Q <Nop> " not go into ex mode when i press q
 
-nnoremap ff :! echo :call input() <cr>
+nnoremap ff :! echo :call GetFoo() <cr>
+
+function GetFoo()
+	call inputsave()
+	let g:Foo=input("enter text")
+	call inputrestore()
+endfunction
 
 """""""""""""""""""""""""""""""
 " Other Settings
