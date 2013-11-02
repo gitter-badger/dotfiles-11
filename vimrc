@@ -106,6 +106,7 @@ map <C-c> :join<Cr> " cntrl+C joins lines now
 :nnoremap Q <Nop> " not go into ex mode when i press q
 
 "nnoremap ff :! echo input() <cr>
+nnoremap ff execute ':! echo tesst<cr>
 
 """""""""""""""""""""""""""""""
 " Other Settings
