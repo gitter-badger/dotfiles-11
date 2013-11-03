@@ -22,4 +22,4 @@ settings.sh (liberated from various other users) is used to setup sensible defau
 - (a few more have been added)
 
 
-NOTE: Some of these extensions require a bit of configuration. If your just looking to use the shortcuts without taking advantage of the plugins, your best bet is to just remove the pathogen lines at the top of my .vimrc file.
+NOTE: Some of these extensions require a bit of configuration. If you're just looking to use the shortcuts without taking advantage of the plugins, your best bet is to just remove the pathogen lines at the top of my .vimrc file.
