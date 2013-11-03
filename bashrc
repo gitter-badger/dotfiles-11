@@ -1,4 +1,4 @@
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=/usr/local/bin:$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 PS1="[\h \T \w] "
 
 alias dev="cd /Users/andrew/dev"
