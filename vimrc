@@ -99,7 +99,9 @@ inoremap jj <Esc> | inoremap kk <Esc> " jj and kk exit insert mode
 nnoremap <silent> <C-n> :tabnext<CR> " Next Tab
 nnoremap <silent> <C-p> :tabprevious<CR> " Previous Tab
 nnoremap <silent> <C-t> :tabnew<CR> " New Tab
-map <Esc><Esc> :w<CR> " save on 2 esc's
+
+" save on 2 esc's
+map <Esc><Esc> :w<CR> 
 "Auto-commit on save if in git directory
 "autocmd BufWritePost * execute ':silent ! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m "Auto-commit: saved %"; fi > /dev/null 2>&1'
 autocmd BufWritePost * let message = input('Message? ', 'Auto-commit: saved ' . expand('%')) | execute ':silent ! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m ' . shellescape(message, 1) . '; fi > /dev/null 2>&1'
