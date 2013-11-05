@@ -3,11 +3,11 @@
 """""""""""""""""""""""""""""""
 
 filetype plugin on " detect filetypes
-"let g:airline_powerline_fonts = 1 " necessary powerline code
-"let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1 " necessary powerline code
+let g:airline#extensions#tabline#enabled = 1
 " pathogen lines
-"source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
-"execute pathogen#infect() 
+source ~/dotfiles/vim/bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect() 
 " autocmd line
 autocmd! 
 
@@ -105,7 +105,9 @@ map <Esc><Esc> :w<CR>
 
 "Auto-commit on save if in git directory
 "autocmd BufWritePost * execute ':silent ! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m "Auto-commit: saved %"; fi > /dev/null 2>&1'
-"commenting out for now.. needs some work.. same as above but asks for message
+"commenting out for now.. needs some work.. same as above but asks for message..
+"need to probably just make it work on like 5 escapes or something unusual.
+"seems cumbersome to have it ask every time.
 "autocmd BufWritePost * let message = input('Message? ', 'Auto-commit: saved ' . expand('%')) | execute ':silent ! if git rev-parse --git-dir > /dev/null 2>&1 ; then git add % ; git commit -m ' . shellescape(message, 1) . '; fi > /dev/null 2>&1'
 map <C-z> u " make ctrl z not send the kill command
 map <C-c> :join<Cr> " cntrl+C joins lines now
