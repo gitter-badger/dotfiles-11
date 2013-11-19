@@ -2,6 +2,7 @@
 
 This repository houses all of my system configuration files and scripts.
 
+NOTE: I am in the process of (very slowly) switching/documenting my switch to zsh from bash. This will obviously change a lot of what goes on here, be patient.
 
 The script configureDotFiles.sh performs the necessary configuration for these
 configuration files to take effect on a new system or an old one whose
