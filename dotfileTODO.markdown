@@ -38,6 +38,7 @@
 	- put vimrc info -- before this, pull from or install vim-unimpared
 	- key usage and shortcuts for plugins
 	- list my custom mappings
+	- should this be a plugin?
 11. look into Slim template engine. allows simple html tags.. use when developing own site in ruby. https://github.com/slim-template/vim-slim and https://github.com/slim-template/slim
 12. Add https://github.com/tpope/vim-endwise ?
 13. Go through https://github.com/tpope/vim-sensible and pull any desired
