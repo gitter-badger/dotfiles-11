@@ -11,6 +11,8 @@
 7. Switch to zsh.
 8. Add to config script.. if dotfiles is not located in the ~/ directory then make a simlink to its actual location from the ~/ directory
 9. add .shrc and .profile config and to script
+10. add watson https://github.com/nhmood/watson-ruby
+11. mess with powerline
 
 ###vimrc ToDo:
 
