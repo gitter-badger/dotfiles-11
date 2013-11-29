@@ -13,6 +13,7 @@
 9. add .shrc and .profile config and to script
 10. add watson https://github.com/nhmood/watson-ruby
 11. mess with powerline
+12. change the .profile in this directory
 
 ###vimrc ToDo:
 
