@@ -14,6 +14,7 @@
 10. add watson https://github.com/nhmood/watson-ruby
 11. mess with powerline
 12. change the .profile in this directory
+13. add zsh to config script, ~/.oh-my-zsh and ~/.zshrc
 
 ###vimrc ToDo:
 
