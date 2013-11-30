@@ -15,7 +15,8 @@
 11. mess with powerline
 12. change the .profile in this directory
 13. add zsh to config script, ~/.oh-my-zsh and ~/.zshrc
-
+14. check current dotfiles in ~/ add necessary here
+15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 
 ###vimrc ToDo:
 
 1. Hashrocket Shortcut is not working properly.. Is there a conflict?
