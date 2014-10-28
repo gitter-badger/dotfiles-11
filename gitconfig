@@ -1,12 +1,12 @@
 [user]
 	name = Andrew Hayes
-	email = mail@AndrewHay.es
+	email = Mail@AndrewHay.es
 [credential]
 	helper = osxkeychain
 [merge]
 	tool = vimdiff
 [color]
-    ui = auto
+	ui = true
 [alias]
     st = status
     ci = commit
@@ -45,3 +45,14 @@
     ra = !git r --all
     l = "!. ~/.githelpers && pretty_git_log"
     la = !git l --all
+[core]
+	excludesfile = /Users/andrew/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f

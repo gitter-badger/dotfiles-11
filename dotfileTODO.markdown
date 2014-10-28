@@ -16,7 +16,14 @@
 12. change the .profile in this directory
 13. add zsh to config script, ~/.oh-my-zsh and ~/.zshrc
 14. check current dotfiles in ~/ add necessary here
-15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 15. 
+15. go through dotfiles and configure so that shells are loaded in preferred
+	order.
+16. add to bashrc/zshrc a command that does the following with a similar
+	structure to the way i currently do the cd. cd.. cd... thing but with ls.
+	ls.. ls... and have it list that many directories deep and print some sort
+	of quick little graphical representation. should be pretty easy to do with a
+	nested loop or two.
+
 ###vimrc ToDo:
 
 1. Hashrocket Shortcut is not working properly.. Is there a conflict?

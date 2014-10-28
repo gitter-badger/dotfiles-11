@@ -29,3 +29,21 @@ alias sshdh="ssh andrewrussellhayes@andrewrussellhayes.com"
 alias reboot="shutdown -r now"
 alias reload=". ~/.bash_profile"
 alias gitconf="cat ~/dotfiles/gitconfig"
+
+#docker stuff.. move into own file
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/andrew/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+b2d(){
+	boot2docker $1;
+}
+
+#Docer alias's
+alias dpsa="docker ps -a"
+alias dps="docker ps"
+
+#keep latest of duplicates
+export HISTCONTROL=erasedups
+
+# Set CLICOLOR if you want Ansi Colors in iTerm2 
+export CLICOLOR=1

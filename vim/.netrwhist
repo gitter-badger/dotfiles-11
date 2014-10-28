@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/Users/andrew/Home/dev/andrewhay.es'
 let g:netrw_dirhist_2='/Users/andrew/Home/dev/andrewhay.es/app/views/welcome'
 let g:netrw_dirhist_3='/Users/andrew/Home/dev/dotfiles/vim/bundle/Command-T'
+let g:netrw_dirhist_4='/Volumes/btsync'
+let g:netrw_dirhist_5='/Volumes/btsync/.AppleDB'
+let g:netrw_dirhist_6='/Users/andrew/.boot2docker'
