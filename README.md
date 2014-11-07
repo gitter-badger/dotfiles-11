@@ -1,4 +1,5 @@
 # dotfiles
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/AndrewRussellHayes/dotfiles?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 This repository houses all of my system configuration files and scripts.
 
